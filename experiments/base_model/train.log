@@ -1,0 +1,24 @@
+[17:24:19] DeepAR.Train: Loading the datasets...
+[17:24:20] DeepAR.Data: train_len: 389101
+[17:24:20] DeepAR.Data: building datasets from data/elect...
+[17:24:20] DeepAR.Data: test_len: 2590
+[17:24:20] DeepAR.Data: building datasets from data/elect...
+[17:24:20] DeepAR.Data: weights: tensor([4.5579e-08, 4.7663e-08, 4.8446e-08,  ..., 8.4827e-05, 8.4776e-05,
+        8.4272e-05], dtype=torch.float64)
+[17:24:20] DeepAR.Data: num samples: 389101
+[17:24:20] DeepAR.Train: Loading complete.
+[17:24:20] DeepAR.Train: Model: 
+Net(
+  (embedding): Embedding(370, 20)
+  (lstm): LSTM(25, 40, num_layers=3, dropout=0.1)
+  (relu): ReLU()
+  (distribution_mu): Linear(in_features=120, out_features=1, bias=True)
+  (distribution_presigma): Linear(in_features=120, out_features=1, bias=True)
+  (distribution_sigma): Softplus(beta=1, threshold=20)
+)
+[17:24:20] DeepAR.Train: Starting training for 20 epoch(s)
+[17:24:20] DeepAR.Train: begin training and evaluation
+[17:24:20] DeepAR.Train: Epoch 1/20
+[17:24:32] DeepAR.Eval: - Full test metrics: ND: 0.754; RMSE: 6.790; test_loss: 7.725
+[17:24:32] DeepAR.Train: train_loss: 1.600369930267334
+[17:24:32] DeepAR.Train: train_loss: 1.600369930267334
